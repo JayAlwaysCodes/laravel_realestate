@@ -80,12 +80,12 @@ class AdminController extends Controller
 
         //match the old password
         if(!Hash::check($request->old_password, auth::user()->password)){
-            $notificationn = array(
+            $notification = array(
                 'message' => 'Old Password is Wrong!',
                 'alert-type' => 'error'
             );
     
-            return back()->with($notificationn);
+            return back()->with($notification);
         }
 
         //update the new password
@@ -93,12 +93,12 @@ class AdminController extends Controller
             'password' => Hash::make($request->new_password)
         ]);
 
-        $notificationn = array(
+        $notification = array(
             'message' => 'password Changed!',
             'alert-type' => 'success'
         );
 
-        return back()->with($notificationn);
+        return back()->with($notification);
 
     }//end method
 }
