@@ -47,7 +47,7 @@
 		<div class="page-wrapper">
 					
 			<!-- partial:partials/_navbar.html -->
-            @include('admin.body.header')
+            @include('admin.body.header');
 			<!-- partial -->
             @yield('admin')
 
