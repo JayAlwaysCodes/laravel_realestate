@@ -283,7 +283,7 @@
             <div class="collapse" id="authPages">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="pages/auth/login.html" class="nav-link">Login</a>
+                  <a href="login" class="nav-link">Login</a>
                 </li>
                 <li class="nav-item">
                   <a href="pages/auth/register.html" class="nav-link">Register</a>
